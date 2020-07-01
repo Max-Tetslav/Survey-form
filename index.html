@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html id='all'>
+    <head>
+        <title>Form</title>
+        <meta charset='utf-8'>
+        <link type='text/css' rel='stylesheet' href='main.css'>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap&subset=cyrillic" rel="stylesheet">
+       
+    </head>
+    <body>
+        <header id='top'>
+            <h1 id='title'>Привет, Мир!</h1>
+                <p id='description'>Укажите информацию о себе</p>
+        </header>
+        <section id='sec'>
+            <form id='survey-form'>
+                <div class='divin'>
+                    <label id='name-label'>Имя: </label>
+                    <input id='name' type='text' placeholder='Введите ваше имя...' >
+                </div>
+                <div class='divin'>
+                    <label id='email-label'>Email: </label> <br/>
+                    <input id='email' type="email" placeholder='Введите ваш Email...' required>
+                </div>
+                <div class='divin'>
+                    <label id='number-label'>Возраст</label><br/>
+                    <input id='number' type='number' min='10' max='80' step='1' placeholder='Введите ваш возраст...' required>
+                </div>
+                <div class='divin'>
+                    <label>В каком направлении вы хотели бы развиваться?</label><br/>
+                    <select class='sel' id='dropdown'>
+                        <option disabled selected>Выберите направление</option>
+                        <option>Front-end</option>
+                        <option>Back-end</option>
+                        <option>Мобильная разработка</option>
+                        <option>Разработка игр</option>
+                        <option>DevOps</option>
+                    </select>
+                </div>
+                <div class='divin'>
+                    <label>Сложно ли вам изучать программирование?</label><br/>
+                    <input  type='radio' class='check' class='check' name='choise' value='definetly' checked >
+                    <label for='e'>Definetly</label><br/>  
+                    <input  type='radio' id='r' class='check' name='choise' value='maybe' >
+                    <label for='r'>Maybe</label><br/>    
+                    <input type='radio' id='f' class='check' name='choise' value='notsure' >
+                    <label for='f'>Not sure</label>
+                </div> 
+                <div class='divin'>
+                    <label>Почему вы выбрали программирование?</label><br/>
+                    <select class='sel'>
+                        <option disabled selected>Почему?</option>
+                        <option>Это интересно</option>
+                        <option>Большие зарплаты</option>
+                        <option>Друзья посоветовали</option>
+                    </select>
+                </div>
+                <div id='check' class='divin'>
+                    <label>Какие навыков вам сейчас не хватает?</label><br/>
+                    <input type='checkbox' class='check' value='1'>
+                    <label for='checkbox'>Front-End Projects</label><br/>
+                    <input type='checkbox' value='2'>
+                    <label for='checkbox'>Back-End Projects</label><br/>
+                    <input type='checkbox' value='3'>
+                    <label for='checkbox'>Videos</label><br/>
+                    <input type='checkbox' value='4'>
+                    <label for='checkbox'>Forum</label><br/>
+                    <input type='checkbox' value='5'>
+                    <label for='checkbox'>Wiki</label>
+                </div>
+                <div class='divin'>
+                    <label>Дополнительная информация:</label>
+                    <textarea id='textarea' placeholder='Введите дополнительную информацию...' ></textarea>
+                </div>
+                <div class='divin'>   
+                    <input id='submit' type='submit' value='Submit'>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
